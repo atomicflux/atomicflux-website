@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — 1%</title>
+<meta name="description" content="Privacy policy for the 1% iOS habit tracker app.">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="/">
+    <span class="mark">1%</span>
+    atomicflux
+  </a>
+  <nav class="site">
+    <a href="/support/">Support</a>
+    <a href="/privacy/">Privacy</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <span class="badge">Last updated: August 26, 2026</span>
+  <h1>1% — Privacy Policy</h1>
+
+  <p>This policy covers the 1% iOS app (including its "Habit Streak"
+  home-screen widget) and the backup service it optionally syncs to when
+  you sign in. It's written and maintained by the app's sole developer,
+  Doruk Ersoy, referred to here as "we."</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li><strong>Nothing leaves your device unless you sign in.</strong> Without an account, every habit, streak, and note you enter stays only in the app's local storage.</li>
+    <li><strong>Signing in only adds backup and sync</strong> — a copy of your progress, protected by a real, cryptographically verified Apple or Google sign-in, not just a name you type in.</li>
+    <li><strong>Setup asks for your country and birthdate</strong> — self-reported, never GPS-derived, and used only in aggregate; your birthdate also confirms you're 13 or older before you can continue.</li>
+    <li><strong>We don't currently share or sell individually identifying data</strong> — but we do share aggregate, non-identifying usage counts with companion apps we may partner with, and we may in the future share or sell personal data too (service providers, advertising partners, or a sale of data); see <a href="#third-parties">Third parties</a> for exactly what that means and how to opt out.</li>
+    <li><strong>Your email is stored in exactly one place.</strong> Every other record about your habits or app usage references an anonymous internal ID instead — see <a href="#storage-security">Storage &amp; security</a>.</li>
+    <li>You can ask for your synced data to be shown to you or deleted at any time, and opt out of any future sale or sharing — see <a href="#your-choices">Your choices &amp; opt-outs</a>.</li>
+  </ul>
+
+  <h2>What we collect</h2>
+  <p>What's collected depends entirely on whether you've signed in. If you use 1% without ever tapping "Sign in with Apple" or "Sign in with Google," nothing described below leaves your device.</p>
+
+  <p><strong>Account &amp; identity.</strong> When you sign in, we receive your email address, the display name your provider gives us, and which provider you used (Apple or Google). That's the full extent of identity information we ever receive — no phone number, no physical address, no separate first/last name field.</p>
+
+  <p><strong>Profile info you type in at setup.</strong> During first-time setup, we ask which country you live in (you pick it from a list — this is never derived from GPS or any device location signal) and your birthdate. Your birthdate is how we confirm you're 13 or older before you can continue — see <a href="#children">Children</a> — and, together with country, is used only in aggregate, never individually: things like "what fraction of our users are in a given age range," not a lookup of any one person's exact age.</p>
+
+  <p><strong>Habit data.</strong> If you're signed in, your device backs up your habit list so you can restore it on a new device or after reinstalling. That backup includes:</p>
+  <ul>
+    <li>Each habit's title, category, icon, color, and any notes you've written for it</li>
+    <li>Its weekly schedule and reminder time</li>
+    <li>Every date you've ever marked it complete, and your current and longest streaks</li>
+    <li>Your account-level level, XP, coins, gems, and quest progress</li>
+  </ul>
+
+  <p><strong>Companion-app usage.</strong> If you link a habit to a companion app (e.g. a language or fitness app) and sign in, each time you tap to open it we record which app, its identifier, and the exact date and time. This is what lets the app show you patterns like "you usually do this around 8am." Your individual events are never shared outside your own account — but we may share the <em>aggregate</em> count across all users (e.g. "1% users opened Duolingo 4,000 times last month") with that companion app's team; see <a href="#third-parties">Third parties</a>.</p>
+
+  <p><strong>Technical &amp; security data.</strong> Like any server, ours briefly sees the IP address a request comes from. We hold this only in memory, only long enough to slow down repeated failed sign-in attempts against an account, and never write it to a database or attach it to your profile.</p>
+
+  <p><strong>What we don't collect.</strong> Location, contacts, photos, camera or microphone access, the list of other apps on your device, advertising identifiers, or payment details. 1% doesn't request any of these, signed in or not.</p>
+
+  <h2>How we use it</h2>
+  <ul>
+    <li><strong>To back up and restore your progress</strong> across devices and reinstalls — the entire reason an account exists.</li>
+    <li><strong>To show you your own patterns</strong> — streaks, XP, and companion-app habits, reflected back to you inside the app.</li>
+    <li><strong>To keep the service working</strong> — rate-limiting abusive requests, diagnosing bugs.</li>
+  </ul>
+  <p>We do not use your data to train models, build advertising profiles, or share it with data brokers. There is nothing else it's used for.</p>
+
+  <h2 id="storage-security">Storage &amp; security</h2>
+  <p>Your habit data lives on your device by default. When you sign in, your device sends an encrypted (HTTPS/TLS) copy to a server we operate directly — not a third-party cloud analytics platform.</p>
+  <p>On that server, your email address is stored in exactly one place: a dedicated account record. Every other table — your habits, your streak history, your companion-app events — stores only an internal, randomly generated ID instead of your email. Reversing that ID back to your email is a separate, deliberate step available only for the administrative purposes described below.</p>
+  <p>Every request that reads or writes your synced data is checked against a real, cryptographically verified Apple or Google sign-in token — not just a name or email typed into a URL.</p>
+
+  <h2>Who can see it</h2>
+  <table>
+    <tr><th>Who</th><th>What they can see</th></tr>
+    <tr><td>You</td><td>Everything in your own account, inside the app.</td></tr>
+    <tr><td>Doruk Ersoy (developer)</td><td>Aggregate and per-account usage statistics through a password- and identity-protected admin view, used to understand how the app is used and to fix problems. Not shared with anyone else.</td></tr>
+    <tr><td>Anyone else</td><td>Nothing. No other person, company, or automated system has access to your account data.</td></tr>
+  </table>
+
+  <h2 id="third-parties">Third parties</h2>
+  <p><strong>Today.</strong> 1% currently uses these outside services and practices:</p>
+  <ul>
+    <li><strong>Sign in with Apple / Google</strong> — used only to verify who you are. Each handles your credentials under its own privacy policy; we only ever receive the email, name, and verification token they choose to share.</li>
+    <li><strong>Apple's public App Store search</strong> — used when you search for a companion app by name, so you don't have to type a URL by hand. This sends only the text you search for, with no personal data attached.</li>
+    <li><strong>Aggregate companion-app statistics</strong> — we may share a companion app's team (e.g. a language or fitness app featured in Quick Add) an aggregate count of how many 1% users opened their app, as part of exploring a partnership or featuring them more prominently. This is always a total count across every user, never tied to your name, email, or any other identifying detail — the same way "1,204 people opened this link" doesn't reveal who any of them were.</li>
+  </ul>
+  <p>We do not currently run advertising, use third-party analytics SDKs, or sell individually identifying data.</p>
+
+  <p><strong>In the future.</strong> We're disclosing this now even though none of it is active today: as 1% grows, we may share or sell personal information with third parties in these ways —</p>
+  <ul>
+    <li><strong>Service providers</strong> — companies that would run parts of the app on our behalf (for example, cloud hosting or email delivery), bound by contract to use your data only to provide that service to us.</li>
+    <li><strong>Advertising or marketing partners</strong> — to support ads shown in the app or elsewhere, which could include sharing identifiers or usage data with an ad or marketing platform.</li>
+    <li><strong>Sale of data</strong> — exchanging personal information with a third party for money or other value, as its own business arrangement rather than a service performed for us.</li>
+    <li><strong>Business transfers</strong> — if 1% is acquired, merged, or its assets sold, your data may transfer to the company involved, under the same protections described here (or ones we notify you of first).</li>
+  </ul>
+  <p>If we start doing any of the above, we'll update the date on this policy and, where practical, tell you inside the app before it happens. <strong>You always have the right to opt out</strong> of any sale or sharing of your data for advertising purposes — see <a href="#your-choices">Your choices &amp; opt-outs</a>.</p>
+
+  <h2>Retention</h2>
+  <p>Local data on your device stays until you delete the app. Synced data on our server stays until you either stop using the account or ask us to delete it, per below — there's no automatic expiry that would silently lose your streak history.</p>
+
+  <h2 id="your-choices">Your choices &amp; opt-outs</h2>
+  <ul>
+    <li><strong>Access</strong> — ask us for a copy of everything stored under your account.</li>
+    <li><strong>Deletion</strong> — tap Delete Account in Profile → Connected Account to permanently delete your synced habits, progress, and account from our server, right in the app. Deleting the app itself only removes what's stored locally; use the in-app control (or email us) for your synced backup.</li>
+    <li><strong>Correction</strong> — your habit data is fully editable in the app at any time; for your account email/name, sign out and back in with the corrected details.</li>
+    <li><strong>Opt out of sale or sharing</strong> — tell us at any time that you don't want your data sold or shared with advertising partners, described in <a href="#third-parties">Third parties</a>. We'll honor that opt-out going forward, whether or not we're actively doing either yet.</li>
+  </ul>
+  <p>Access requests and sale/sharing opt-outs are still handled directly by the developer today rather than an automated in-app control — email the address below and expect a response within a reasonable time.</p>
+
+  <h3>California residents</h3>
+  <p>Under the California Consumer Privacy Act (CCPA/CPRA), you have the right to know what personal information we hold about you, to request its deletion, and to opt out of its sale or sharing — including for cross-context behavioral advertising. We will not deny you service, charge you a different price, or provide a different level of service for exercising any of these rights. To exercise any of them, use the contact below; we don't currently sell or share data in a way that requires responding to a browser's Global Privacy Control signal, but we'll honor one if you send it once we do.</p>
+
+  <h3>EU/UK/EEA residents</h3>
+  <p>Where GDPR/UK GDPR applies, backing up your habit data relies on your consent, which you give by signing in and can withdraw at any time by deleting your account. Any future sharing with advertising partners described in <a href="#third-parties">Third parties</a> would require its own separate, explicit consent from you first — not just continuing to use the app.</p>
+
+  <h2 id="children">Children</h2>
+  <p>1% is a simple, wholesome habit tracker — there's nothing in it we'd think twice about a younger person using, and building good habits is a genuinely good use of screen time at any age. Using 1% fully, with every feature, never requires an account or an email address; everything works entirely on-device without signing in.</p>
+  <p>Signing in does collect a real email address and birthdate, though, so — like most apps that offer an account — we don't knowingly collect personal information from anyone under 13 (or the minimum age required by your local law) without a parent or guardian's consent. First-time setup actually asks your birthdate and won't let you continue past that step if you enter one showing you're under 13 — a real check, not just a policy statement. If you believe a child has gotten past that anyway, contact us and we'll delete the account.</p>
+
+  <h2>Where data lives</h2>
+  <p>Your synced data is processed and stored on infrastructure operated directly by the developer — not a third-party cloud platform — rather than a specific, fixed commercial data center region. If that changes (for example, a move to a commercial cloud region), this section will be updated to name it specifically.</p>
+
+  <h2>Accessibility</h2>
+  <p>1% is built with iOS's standard interface components, which carry some baseline support for VoiceOver and other assistive technologies from the operating system itself. We haven't yet completed a dedicated accessibility audit, and we're telling you plainly rather than claiming more than is true: much of the app's text does not yet resize with iOS's Larger Text setting, and screens don't yet carry hand-written VoiceOver labels beyond what iOS infers automatically.</p>
+  <p>We're working toward the <a href="https://www.w3.org/WAI/WCAG21/quickref/">Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</a> — the common benchmark used for app accessibility — as our goal, not a claim of where we are today.</p>
+  <p>If something in 1% is difficult or impossible for you to use because of a disability, please tell us at the address below. Accessibility reports are treated as bugs, not feature requests, and we'll get back to you.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes in a way that meaningfully affects what we collect or how we use it, we'll update the date at the top and, where practical, note it inside the app. Continuing to use 1% after a change means you accept the updated policy.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, access, or deletion requests:</p>
+  <p><strong>Doruk Ersoy</strong><br>
+  <a href="mailto:info@atomicflux.app">info@atomicflux.app</a></p>
+</main>
+
+<footer class="site">
+  <span>&copy; 2026 Doruk Ersoy</span>
+  <span><a href="/">Back to home</a></span>
+</footer>
+</body>
+</html>
