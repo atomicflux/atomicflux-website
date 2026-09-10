@@ -63,13 +63,8 @@ header.site {
   width: 28px;
   height: 28px;
   border-radius: 8px;
-  background: var(--accent);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  font-weight: 800;
+  object-fit: cover;
+  display: block;
 }
 
 nav.site {

@@ -1,6 +1,6 @@
 # atomicflux.app
 
-Website for **1%**, an iOS habit-tracking app by Doruk Ersoy. This site exists
+Website for **Atomic Flux**, an iOS habit-tracking app by Doruk Ersoy. This site exists
 mainly to satisfy Apple App Store Connect's requirements:
 
 - **Privacy Policy URL** → `/privacy/`
