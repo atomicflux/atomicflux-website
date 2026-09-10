@@ -3,43 +3,205 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1% — Build better habits, one day at a time</title>
-<meta name="description" content="1% is a simple, private habit tracker for iOS. Track streaks, build routines, and grow 1% every day.">
+<title>1% — Stop chasing willpower. Build 1% momentum, daily.</title>
+<meta name="description" content="1% is a dead-simple, private habit tracker for iOS. Turn tiny daily wins into streaks you'll actually keep.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/home.css">
 </head>
-<body>
+<body class="home">
 <header class="site">
   <a class="brand" href="/">
     <span class="mark">1%</span>
     atomicflux
   </a>
   <nav class="site">
+    <a href="#how-it-works">How it works</a>
     <a href="/support/">Support</a>
     <a href="/privacy/">Privacy</a>
+    <a class="nav-dl" href="#download">Get the app</a>
   </nav>
 </header>
 
-<main class="wrap">
-  <section class="hero">
-    <div class="mark-lg">1%</div>
-    <h1>Build better habits, one day at a time.</h1>
-    <p class="tagline">1% is a simple, private habit tracker for iOS — streaks, reminders, and quiet progress, without your data leaving your device unless you want it to.</p>
-    <div class="cta-row">
-      <a class="btn secondary" href="/support/">Get support</a>
-      <a class="btn secondary" href="/privacy/">Privacy policy</a>
+<main>
+  <section class="hero-section home-wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">🌱 Atomic progress, not overnight overhauls</span>
+        <h1>
+          <span class="line">Stop chasing <span class="strike">willpower</span>.</span>
+          <span class="line">Build <span class="accent-word">1% momentum</span>, daily.</span>
+        </h1>
+        <p class="hero-sub">1% is a dead-simple habit tracker that turns tiny daily wins into streaks you'll actually keep — fully private on your device, unless you choose to back up.</p>
+
+        <div class="cta-row">
+          <a class="appstore-badge disabled" href="#download" aria-disabled="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.462 2.096-1.226 2.87-.83.84-2.14 1.49-3.09 1.41-.15-1.09.44-2.24 1.16-2.95.79-.8 2.14-1.4 3.11-1.33.02.01.03.01.05 0zM20.6 17.12c-.41.95-.6 1.37-1.12 2.21-.72 1.17-1.74 2.63-3 2.64-1.12.01-1.41-.73-2.93-.72-1.52.01-1.84.74-2.96.73-1.26-.01-2.22-1.32-2.94-2.49-2.02-3.27-2.23-7.1-.98-9.14.88-1.44 2.28-2.29 3.6-2.29 1.34 0 2.18.74 3.29.74 1.08 0 1.73-.74 3.29-.74 1.18 0 2.43.64 3.31 1.75-2.91 1.6-2.44 5.76.44 7.31z"/></svg>
+            <span class="label">
+              <span class="small">Coming soon on the</span>
+              <span class="big">App Store</span>
+            </span>
+            <span class="soon-tag">Soon</span>
+          </a>
+          <a class="btn secondary" href="#how-it-works">See how it works ↓</a>
+        </div>
+
+        <div class="proof-row">
+          <span>🔒 Fully offline by default</span>
+          <span>🆓 Free to start</span>
+          <span>🔥 Streaks that stick</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <img class="app-icon-float" src="/assets/app-icon.png" alt="1% app icon">
+        <div class="float-card card-streak">
+          <span class="emoji">🔥</span>
+          <div><strong>47</strong> <span class="muted">day streak</span></div>
+        </div>
+        <div class="float-card card-habit">
+          <span class="emoji">✅</span>
+          <strong>Morning Run</strong>
+          <span class="muted">Completed today</span>
+        </div>
+        <div class="float-card card-level">
+          <span class="emoji">⭐</span>
+          <strong>Level 12</strong>
+          <span class="muted">+120 XP this week</span>
+        </div>
+        <div class="float-card card-widget">
+          <div class="widget-dots" aria-hidden="true">
+            <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span>
+            <span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <strong>Habit Streak</strong>
+          <span class="muted">Home Screen widget</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <p class="notice" style="text-align:center; max-width:520px; margin:40px auto 0;">
-    This landing page is a placeholder — full design coming soon. The
-    <a href="/privacy/">Privacy Policy</a> and <a href="/support/">Support</a>
-    pages are complete and live.
-  </p>
+  <section id="how-it-works" class="features home-wrap">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">How 1% works</span>
+      <h2>Small enough to actually do. Every single day.</h2>
+    </div>
+
+    <div class="feature-row" data-reveal>
+      <div class="feature-copy">
+        <span class="num">1</span>
+        <h3>Tiny habits, real streaks</h3>
+        <p>Add a habit in seconds, mark it done with one tap, and watch your streak grow. No forms, no friction — just the tap that keeps the chain going.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="mock-streak" aria-hidden="true">
+          <div class="day done">M</div>
+          <div class="day done">T</div>
+          <div class="day done">W</div>
+          <div class="day done">T</div>
+          <div class="day done">F</div>
+          <div class="day">S</div>
+          <div class="day">S</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row reverse" data-reveal>
+      <div class="feature-copy">
+        <span class="num">2</span>
+        <h3>Your streak, right on your Home Screen</h3>
+        <p>The "Habit Streak" widget keeps your progress one glance away, so the habit stays top of mind without opening the app.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="mock-widget" aria-hidden="true">
+          <div class="top"><span>Habit Streak</span><span>🔥</span></div>
+          <div class="streak-num">47</div>
+          <div class="grid7">
+            <span class="on"></span><span class="on"></span><span class="on"></span>
+            <span class="on"></span><span class="on"></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row" data-reveal>
+      <div class="feature-copy">
+        <span class="num">3</span>
+        <h3>Level up as you build momentum</h3>
+        <p>Every completed habit earns XP, coins, and gems, and levels you up over time — small, satisfying proof that the 1% is adding up.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="mock-levels" aria-hidden="true">
+          <div class="row"><span>Level 12</span><span class="muted">680 / 1000 XP</span></div>
+          <div class="bar"><span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-row reverse" data-reveal>
+      <div class="feature-copy">
+        <span class="num">4</span>
+        <h3>Private by default</h3>
+        <p>Every feature works fully on-device with no account at all. Sign in only if you want backup and sync across devices — that's the only thing it's for.</p>
+      </div>
+      <div class="feature-visual">
+        <div class="mock-lock">
+          <div class="icon">🔒</div>
+          <p>Nothing leaves your device unless you choose to sign in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust-strip">
+    <div class="home-wrap trust-grid" data-reveal>
+      <div>
+        <span class="eyebrow">Privacy, plainly</span>
+        <h2>We wrote our privacy policy in plain English on purpose.</h2>
+        <p>No dense legal maze — just a clear account of what 1% collects (almost nothing, unless you sign in), what it's used for, and how to delete it whenever you want.</p>
+        <p><a class="btn secondary" href="/privacy/">Read the full privacy policy →</a></p>
+      </div>
+      <div class="trust-points">
+        <div class="trust-point">
+          <span class="icon">📵</span>
+          <div><strong>No account required</strong><span>Every feature works fully offline, with nothing sent anywhere.</span></div>
+        </div>
+        <div class="trust-point">
+          <span class="icon">🔑</span>
+          <div><strong>Real sign-in, not just a name</strong><span>Backup is protected by a cryptographically verified Apple or Google sign-in.</span></div>
+        </div>
+        <div class="trust-point">
+          <span class="icon">🗑️</span>
+          <div><strong>Delete anytime, in-app</strong><span>One tap in Profile permanently deletes your synced data — no email required.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="final-cta home-wrap" data-reveal>
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Your 1% starts with today.</h2>
+    <p>No streak was ever built by waiting for tomorrow. Get 1% the moment it launches on the App Store.</p>
+    <div class="cta-row">
+      <a class="appstore-badge disabled" href="#download" aria-disabled="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.462 2.096-1.226 2.87-.83.84-2.14 1.49-3.09 1.41-.15-1.09.44-2.24 1.16-2.95.79-.8 2.14-1.4 3.11-1.33.02.01.03.01.05 0zM20.6 17.12c-.41.95-.6 1.37-1.12 2.21-.72 1.17-1.74 2.63-3 2.64-1.12.01-1.41-.73-2.93-.72-1.52.01-1.84.74-2.96.73-1.26-.01-2.22-1.32-2.94-2.49-2.02-3.27-2.23-7.1-.98-9.14.88-1.44 2.28-2.29 3.6-2.29 1.34 0 2.18.74 3.29.74 1.08 0 1.73-.74 3.29-.74 1.18 0 2.43.64 3.31 1.75-2.91 1.6-2.44 5.76.44 7.31z"/></svg>
+        <span class="label">
+          <span class="small">Coming soon on the</span>
+          <span class="big">App Store</span>
+        </span>
+        <span class="soon-tag">Soon</span>
+      </a>
+    </div>
+  </section>
 </main>
 
 <footer class="site">
   <span>&copy; 2026 Doruk Ersoy</span>
-  <span><a href="mailto:info@atomicflux.app">info@atomicflux.app</a></span>
+  <span><a href="/support/">Support</a> · <a href="/privacy/">Privacy</a> · <a href="mailto:info@atomicflux.app">info@atomicflux.app</a></span>
 </footer>
+
+<script src="/js/home.js" defer></script>
 </body>
 </html>
