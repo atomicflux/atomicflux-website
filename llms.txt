@@ -1,0 +1,14 @@
+# Atomic Flux
+
+> Atomic Flux is a dead-simple, private habit tracker for iOS. It turns tiny daily wins
+> into streaks, with an optional home-screen widget, self-reported progress, and a habit
+> library covering health, focus, and companion-app-linked habits. Most data stays on
+> the device by default; an optional Apple or Google sign-in adds cross-device backup.
+
+## Pages
+
+- [Home](https://atomicflux.app/): product overview, feature walkthrough, and how habit
+  tracking works in the app.
+- [Privacy Policy](https://atomicflux.app/privacy/): exactly what data Atomic Flux
+  collects, when, and why — including what's collected before and after signing in.
+- [Support](https://atomicflux.app/support/): contact and FAQ for app support requests.
